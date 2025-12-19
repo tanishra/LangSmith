@@ -167,13 +167,13 @@ class EuriChatModel(BaseChatModel):
                 )
 
 
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
-import os
-api = os.getenv("EURI_API_KEY")
+# load_dotenv()
+# import os
+# api = os.getenv("EURI_API_KEY")
 
-llm = EuriChatModel(api_key=api,model='gpt-4.1-mini')
+# llm = EuriChatModel(api_key=api,model='gpt-4.1-mini')
 
-for chunk in llm.stream("what is the recipe of pasta"):
-    print(chunk.content, end="", flush=True)
+# for chunk in llm.stream("what is the recipe of pasta"):
+#     print(chunk.content, end="", flush=True)
